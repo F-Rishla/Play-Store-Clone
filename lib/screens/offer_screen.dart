@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class ProfileScreen extends StatelessWidget {
-  const ProfileScreen({super.key});
+class OfferScreen extends StatelessWidget {
+  const OfferScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      backgroundColor: Colors.red,
+      body: SafeArea(child: Text("offer Screen")),
     );
   }
 }
