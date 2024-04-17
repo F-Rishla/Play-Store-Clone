@@ -24,50 +24,37 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //appBar: AppBar(),
-      body: NestedScrollView(
-          headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
-            return [
-              SliverAppBar(
-                leading: Image.network(
-                    "https://m.economictimes.com/thumb/msid-94856434,width-1200,height-900,resizemode-4,imgsize-7588/google-play.jpg",
-                    //fit: BoxFit.cover,
-                    height: 0.25,
-                    width: 0.25),
-                actions: [
-                  IconButton(
-                    onPressed: () {},
-                    icon: const Badge(
-                      backgroundColor: Colors.blue,
-                      label: Text("3"),
-                      child: Icon(Icons.notifications_none_outlined),
-                    ),
-                    color: Colors.black,
-                    iconSize: 30,
-                  ),
-                  const Padding(
-                    padding: EdgeInsets.all(8.0),
-                    child: CircleAvatar(
-                      backgroundImage: NetworkImage(
-                          "https://cdn3.vectorstock.com/i/1000x1000/89/32/letter-f-in-a-flat-on-round-blue-background-vector-24368932.jpg"),
-                      radius: 17,
-                    ),
-                  )
-                ],
-                elevation: 10.0,
-                automaticallyImplyLeading: false,
-                expandedHeight: 50,
-                floating: true,
-                snap: true,
-              )
-            ];
-          },
-          // list of images for scrolling
-          body: screenlist[_selectedIndex]),
+      appBar: AppBar(
+          leading: Image.network(
+              "https://m.economictimes.com/thumb/msid-94856434,width-1200,height-900,resizemode-4,imgsize-7588/google-play.jpg",
+              //fit: BoxFit.cover,
+              height: 0.25,
+              width: 0.25),
+          actions: [
+            IconButton(
+              onPressed: () {},
+              icon: const Badge(
+                backgroundColor: Colors.blue,
+                label: Text("3"),
+                child: Icon(Icons.notifications_none_outlined),
+              ),
+              color: Colors.black,
+              iconSize: 30,
+            ),
+            const Padding(
+              padding: EdgeInsets.all(8.0),
+              child: CircleAvatar(
+                backgroundImage: NetworkImage(
+                    "https://cdn3.vectorstock.com/i/1000x1000/89/32/letter-f-in-a-flat-on-round-blue-background-vector-24368932.jpg"),
+                radius: 17,
+              ),
+            )
+          ]),
+      body: screenlist[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         backgroundColor: const Color.fromARGB(255, 245, 246, 249),
-        unselectedItemColor: Color.fromARGB(255, 11, 10, 10),
+        unselectedItemColor: const Color.fromARGB(255, 11, 10, 10),
         items: const [
           BottomNavigationBarItem(
               icon: Icon(
