@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:play_store_demo/screens/category_screen.dart';
-import 'package:play_store_demo/screens/for_you.dart';
-import 'package:play_store_demo/screens/kid_screen.dart';
-import 'package:play_store_demo/screens/premium_screen.dart';
-import 'package:play_store_demo/screens/top_chat.dart';
+import 'package:play_store_demo/screens/category_screen_game.dart';
+import 'package:play_store_demo/screens/for_you_game.dart';
+import 'package:play_store_demo/screens/kid_screen_game.dart';
+import 'package:play_store_demo/screens/premium_screen_game.dart';
+import 'package:play_store_demo/screens/top_chat_game.dart';
 
 class GameScreen extends StatefulWidget {
   const GameScreen({super.key});
