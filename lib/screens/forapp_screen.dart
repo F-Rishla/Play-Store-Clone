@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:play_store_demo/widgets/applist_widget.dart';
 import 'package:play_store_demo/widgets/carousil_app_widget.dart';
+import 'package:play_store_demo/widgets/productivity_widget.dart';
 import 'package:play_store_demo/widgets/recommend_list_widget.dart';
 import 'package:play_store_demo/widgets/recommend_widget.dart';
 import 'package:play_store_demo/widgets/suggest_widget.dart';
@@ -24,8 +25,13 @@ class ForApp extends StatelessWidget {
         ),
         const SizedBox(height: 50, child: RecommendWidget()),
         SizedBox(
-          height: 300,
+          height: 180,
           child: RecommendListWidget(),
+        ),
+        const SizedBox(height: 50, child: ProductivityWidget()),
+        SizedBox(
+          height: 220,
+          child: AppList(),
         ),
       ],
     ));
