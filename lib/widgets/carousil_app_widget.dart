@@ -8,7 +8,7 @@ class CarouselApp extends StatelessWidget {
     CarousilModel(
         bimg:
             "https://store-images.s-microsoft.com/image/apps.442.14492077886571533.b0266c29-bb30-438c-b201-6b7e235b7920.6ebc94e7-3c85-4277-bee7-bdb2b8ef12dc?q=90&w=256&h=384&mode=crop&format=jpg&background=%23FFFFFF",
-        bclr: Color.fromARGB(255, 233, 139, 6),
+        bclr: const Color.fromARGB(255, 233, 139, 6),
         heading:
             "Easy & Fun PAW Patrol Kids game - Preschool &Toddler children boys &...",
         gimg:
@@ -18,7 +18,7 @@ class CarouselApp extends StatelessWidget {
     CarousilModel(
         bimg:
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHkPath-dLDJMVx4-muzgcPAgocaO2wZv9Wq9aTh1r7A&s",
-        bclr: Color.fromARGB(255, 205, 53, 7),
+        bclr: const Color.fromARGB(255, 205, 53, 7),
         heading:
             "Easy & Fun PAW Patrol Kids game - Preschool &Toddler children boys &...",
         gimg:

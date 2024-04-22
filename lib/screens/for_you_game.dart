@@ -15,12 +15,12 @@ class ForYouScreen extends StatelessWidget {
           height: 280,
           child: Carousel(),
         ),
-        Container(height: 50, child: SuggestWidget()),
+        SizedBox(height: 50, child: SuggestWidget()),
         SizedBox(
           height: 220,
           child: AppList(),
         ),
-        Container(height: 50, child: SuggestWidget()),
+        SizedBox(height: 50, child: SuggestWidget()),
         SizedBox(
           height: 220,
           child: AppList(),

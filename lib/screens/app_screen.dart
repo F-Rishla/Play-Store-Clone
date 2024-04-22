@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:play_store_demo/screens/categoryApp.dart';
+import 'package:play_store_demo/screens/category_app.dart';
 import 'package:play_store_demo/screens/forapp_screen.dart';
-import 'package:play_store_demo/screens/kidApp.dart';
-import 'package:play_store_demo/screens/topApp_screen.dart';
+import 'package:play_store_demo/screens/kid_app.dart';
+import 'package:play_store_demo/screens/top_app_screen.dart';
 
 class AppScreen extends StatelessWidget {
   const AppScreen({super.key});
