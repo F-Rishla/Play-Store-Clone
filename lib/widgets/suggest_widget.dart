@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:play_store_demo/models/suggest_model.dart';
 
+// ignore: must_be_immutable
 class SuggestWidget extends StatelessWidget {
-  const SuggestWidget({super.key});
+  List<SuggestModel> headings=[
+    SuggestModel(lead: "Sponsored", title: ".  Suggested for you")
+  ];
+
+   SuggestWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
