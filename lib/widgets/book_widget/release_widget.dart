@@ -1,26 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:play_store_demo/widgets/book_widget/book_list_widget.dart';
-import 'package:play_store_demo/widgets/book_widget/release_widget.dart';
 
-class EbookScreen extends StatelessWidget {
-  const EbookScreen({super.key});
+// ignore: must_be_immutable
+class ReleaseWidget extends StatelessWidget {
+  const ReleaseWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //appBar: AppBar(),
-      body: SafeArea(
-          child: ListView(
-        children: [
-          const SizedBox(
-            height: 70,
-            child: ReleaseWidget(),
-          ),
-          SizedBox(
-            height: 210,
-            child: BookWidgets(),
-          ),
-          Row(
+        body: SafeArea(
+            child: ListView(
+      children: [
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               const Padding(
@@ -30,12 +22,12 @@ class EbookScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "Recently reduced ebooks",
+                      "New Release",
                       style: TextStyle(
                           fontSize: 18, fontWeight: FontWeight.normal),
                     ),
                     Text(
-                      "Our latest offers",
+                      "Ebooks to add to the shelf",
                       style: TextStyle(fontSize: 14, color: Colors.grey),
                     ),
                   ],
@@ -45,12 +37,8 @@ class EbookScreen extends StatelessWidget {
                   onPressed: () {}, icon: const Icon(Icons.arrow_forward)),
             ],
           ),
-          SizedBox(
-            height: 210,
-            child: BookWidgets(),
-          ),
-        ],
-      )),
-    );
+        )
+      ],
+    )));
   }
 }
