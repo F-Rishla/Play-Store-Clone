@@ -161,39 +161,45 @@ class SearchScreen extends StatelessWidget {
               ),
             ),
             Container(
-                // child: GridView.builder(
-                //     itemCount: searchList.length,
-                //     gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                //         crossAxisCount: 2,
-                //         crossAxisSpacing: 8,
-                //         mainAxisSpacing: 8,
-                //         childAspectRatio: 1),
-                //     itemBuilder: (context, index) {
-                //       return Container(
-                //         height: 70,
-                //         width: 165,
-                //         decoration: BoxDecoration(
-                //           borderRadius: BorderRadius.circular(10),
-                //           color: const Color.fromARGB(255, 214, 244, 244),
-                //         ),
-                //         child: Row(
-                //           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                //           children: [
-                //             Text(
-                //               searchList[index].title,
-                //               style: const TextStyle(fontWeight: FontWeight.bold),
-                //             ),
-                //             IconButton(
-                //               onPressed: () {},
-                //               icon: const Icon(Icons.search),
-                //               iconSize: 19,
-                //               color: Colors.blue,
-                //             )
-                //           ],
-                //         ),
-                //       );
-                //     }),
-                )
+              child: GridView.builder(
+                  itemCount: searchList.length,
+                  physics: const NeverScrollableScrollPhysics(),
+                  shrinkWrap: true,
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 2,
+                      crossAxisSpacing: 8,
+                      mainAxisSpacing: 8,
+                      childAspectRatio: 2.7),
+                  itemBuilder: (context, index) {
+                    return Container(
+                      height: 50,
+                      width: 165,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: const Color.fromARGB(255, 214, 244, 244),
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Text(
+                              searchList[index].title,
+                              style:
+                                  const TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                          IconButton(
+                            onPressed: () {},
+                            icon: const Icon(Icons.search),
+                            iconSize: 19,
+                            color: Colors.blue,
+                          )
+                        ],
+                      ),
+                    );
+                  }),
+            )
           ],
         ),
       )),
